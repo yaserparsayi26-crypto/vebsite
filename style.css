@@ -1,0 +1,236 @@
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+/* Header */
+.main-header {
+    background: #007bff;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.main-header .btn {
+    padding: 12px 24px;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #28a745;
+}
+
+.btn-secondary {
+    background: #ffac2c;
+}
+
+/* Services */
+.services {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-box {
+    background: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+/* Contact Form */
+.contact-section {
+    padding: 40px 0;
+    background: white;
+}
+
+.contact-section form {
+    display: grid;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-section input,
+.contact-section select,
+.contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-section button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    color: #21cff0;
+}
+
+/* Add support for RTL */
+body { direction: rtl; font-family: 'Vazir', sans-serif; }
+
+.btn-group {
+    display: flex;
+    justify-content: center; /* افقی وسط قرار می‌دهد */
+    align-items: center; /* عمودی وسط قرار می‌دهد */
+    margin-top: 30px; /* فاصله از بالا */
+}
+
+.support-section {
+  padding: 40px;
+  background-color: #f1f1f1; /* تغییر رنگ پس‌زمینه */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #ff5733; /* رنگ جدید برای عنوان پشتیبانی */
+  margin-bottom: 20px;
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.method {
+  width: 45%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.method h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.method p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* دکمه‌ها */
+.btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* استایل برای چت آنلاین */
+.chat-btn {
+  background-color: #ff0000;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.chat-btn:hover {
+  background-color: #0362fc;
+  transform: scale(1.05);
+}
+
+/* استایل برای شبکه‌های اجتماعی */
+.social-btn {
+  background-color: #ff0000;
+  color: rgb(0, 0, 0);
+  border: none;
+  margin-top: 10px;
+}
+
+.social-btn:hover {
+  background-color: #001eff;
+  transform: scale(1.05);
+}
+
+/* استایل ریسپانسیو برای موبایل */
+@media (max-width: 768px) {
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .method {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+.contact-methods {
+  display: flex;
+  justify-content: space-between; /* فاصله‌دهی یکسان بین مربع‌ها */
+  gap: 10px; /* فاصله بین مربع‌ها */
+}
+
+.method {
+  width: 100%; /* عرض 100% */
+  height: 200px; /* تنظیم ارتفاع ثابت برای مربع‌ها */
+  background-color: #ffffff; /* رنگ پس‌زمینه */
+  padding: 20px;
+  border-radius: 10px; /* گوشه‌های گرد */
+  box-sizing: border-box;
+}
+
+.method h4 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.method p {
+  text-align: center;
+  font-size: 14px;
+}
